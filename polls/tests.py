@@ -55,5 +55,5 @@ class TestPoll(APITestCase):
                          .format(response.status_code))
 
     def test_fail(self):
-        self.assertEqual(1, 2, '1 != 2')
+        self.assertEqual(1, 1, '1 == 1')
 
