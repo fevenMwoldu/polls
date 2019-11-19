@@ -54,3 +54,6 @@ class TestPoll(APITestCase):
                          'Expected Response Code 201, received {0} instead.'
                          .format(response.status_code))
 
+    def test_fail(self):
+        self.assertEqual(1, 2, '1 != 2')
+
